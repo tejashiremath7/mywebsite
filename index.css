@@ -1,0 +1,277 @@
+head{
+    display: block;
+    position: fixed;
+}
+
+
+heading:hover{
+    box-shadow: 0px 0px 10px pink;
+}
+
+body {
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 10;
+    color: white;
+    width: 100%;
+    height: auto;
+}
+
+
+.container {
+    display: flex ;
+    justify-content: center;
+    
+
+}
+
+.logo img {
+    margin-left: 20px;
+}
+
+.logo h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.left li {
+    display: inline-block;
+    justify-content: space-between;
+    margin: auto 10px;
+    padding: 10px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-radius: 20px;
+}
+
+.left li:hover {
+    background: linear-gradient(50deg, white, grey);
+    color: purple;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px powderblue;
+    opacity: 30;
+    cursor: pointer;
+    border: 1px solid purple;
+}
+
+@media (min-width:300px) and (max-width:520px) {
+    body{
+        padding: 7%;
+    }
+    .logo img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .logo h2 {
+        font-size: 18px;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .left li {
+        font-size: small;
+        margin: 0px;
+        padding: 3px;
+    }
+    .typewriter{
+    
+    display: flex;
+    justify-content: center;
+    font-size: small;
+
+
+}
+    .project1 img{
+        height: 200px;
+        width: 200px;
+
+    }
+}
+.typewriter{
+    display:flex;
+    justify-content: center;
+
+}
+
+.typewriter h4 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret 2s step-end infinite;
+    box-shadow: 0px 0px 5px white;
+        
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 70%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+.body{
+    
+    width: 96%;
+    margin: 20px 20px ;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box2{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    margin-top: 3%;
+    padding: 2% ;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.box2 h4{
+    display: inline-block;
+    
+    position: relative;
+    margin: auto;
+    padding-left: 2%;
+}
+.box2 p{
+    padding-left:4%;
+    padding-right: 4%;
+    margin: 1%;
+}
+
+.box2:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px pink;
+    animation: infinite;
+    border-radius: 20px;
+}
+
+.project{
+    display: block;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 100%;
+    margin-bottom: 2%;
+    border-radius: 20px;
+}
+
+.project1{
+    display: inline-block;
+    background-image: url("images/1.jpg");
+    background-size: contain;
+    height: 300px;
+    width: 300px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    position: static;
+    border-radius: 20px;
+}
+
+.project1:hover{
+    height: 320px;
+    width: 320px;
+    box-shadow: 0px 0px 10px pink;
+    border:1px solid white;
+    
+}
+
+
+.project1 #p1{
+
+}
+
+.project1 #p1{
+    
+}
+
+.project1 #p1{
+    
+}
+
+.project1 #p1{
+    
+}
+
+.project1 #p1{
+    
+}
+
+.project:hover{
+    box-shadow: 0px 0px 20px pink;
+    border: 1px solid pink;
+}
+
+footer{
+    background-color: black;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    position: static;
+    border-radius:20px ;
+    
+}
+
+footer:hover{
+    box-shadow: 0px 0px 20px white;
+
+}
+
+.f1{
+    display: flex;
+    justify-content:center;
+   
+}
+
+.f5 ul{
+    display: flex;
+    justify-content:center;
+    flex-direction:row;
+    margin:0;
+    padding: 0;
+    
+}
+
+.f5 li{
+    filter: invert(100%);
+    display: flexbox;
+    margin-left: 10%;
+}
+
